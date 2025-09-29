@@ -95,24 +95,107 @@
   --color-background-disabled: var(--color-merlin-grey-100);
 }
 
+/* Fallback CSS Custom Properties for broader compatibility */
+:root {
+  /* Merlin Blue 500 */
+  --color-merlin-blue-50: #edf1fa;
+  --color-merlin-blue-100: #cedcfb;
+  --color-merlin-blue-200: #a3bdf2;
+  --color-merlin-blue-300: #7796dd;
+  --color-merlin-blue-400: #3e62bb;
+  --color-merlin-blue-500: #2248a5;
+  --color-merlin-blue-600: #18358b;
+  --color-merlin-blue-700: #102771;
+  --color-merlin-blue-800: #071a5c;
+  --color-merlin-blue-900: #061347;
+
+  /* Merlin Grey 500 */
+  --color-merlin-grey-50: #f8f8f8;
+  --color-merlin-grey-100: #f0f0f0;
+  --color-merlin-grey-200: #e5e5e5;
+  --color-merlin-grey-300: #d4d4d4;
+  --color-merlin-grey-400: #bcbcbc;
+  --color-merlin-grey-500: #737373;
+  --color-merlin-grey-600: #676767;
+  --color-merlin-grey-700: #545454;
+  --color-merlin-grey-800: #363636;
+  --color-merlin-grey-900: #262626;
+
+  /* Merlin Black */
+  --color-merlin-black: #161616;
+
+  /* Merlin White */
+  --color-merlin-white: #fcfcfc;
+
+  /* Merlin Slate 500 */
+  --color-merlin-slate-50: #e8ecf2;
+  --color-merlin-slate-100: #e3f1f9;
+  --color-merlin-slate-200: #c9e1f4;
+  --color-merlin-slate-300: #a4c3df;
+  --color-merlin-slate-400: #809fc0;
+  --color-merlin-slate-500: #547197;
+  --color-merlin-slate-600: #3d5881;
+  --color-merlin-slate-700: #2a416c;
+  --color-merlin-slate-800: #1a2d57;
+  --color-merlin-slate-900: #101e48;
+
+  /* Merlin Green 500 */
+  --color-merlin-green-50: #e6fbdb;
+  --color-merlin-green-100: #d9f8cf;
+  --color-merlin-green-200: #aef1a2;
+  --color-merlin-green-300: #74d76d;
+  --color-merlin-green-400: #43b046;
+  --color-merlin-green-500: #167c22;
+  --color-merlin-green-600: #106a23;
+  --color-merlin-green-700: #0b5922;
+  --color-merlin-green-800: #074720;
+  --color-merlin-green-900: #043b1f;
+
+  /* Merlin Amber 500 */
+  --color-merlin-amber-50: #fff9db;
+  --color-merlin-amber-100: #fef2cb;
+  --color-merlin-amber-200: #fee198;
+  --color-merlin-amber-300: #fdcc65;
+  --color-merlin-amber-400: #fbb73e;
+  --color-merlin-amber-500: #f99500;
+  --color-merlin-amber-600: #d67700;
+  --color-merlin-amber-700: #b35c00;
+  --color-merlin-amber-800: #904400;
+  --color-merlin-amber-900: #773400;
+
+  /* Merlin Red 500 */
+  --color-merlin-red-50: #ffefeb;
+  --color-merlin-red-100: #fce0d1;
+  --color-merlin-red-200: #fabaa4;
+  --color-merlin-red-300: #f28a74;
+  --color-merlin-red-400: #e65d51;
+  --color-merlin-red-500: #d61d1d;
+  --color-merlin-red-600: #b81523;
+  --color-merlin-red-700: #9a0e26;
+  --color-merlin-red-800: #7c0927;
+  --color-merlin-red-900: #660527;
+
+  /* Semantic Text Tokens */
+  --color-text-primary: var(--color-merlin-black);
+  --color-text-secondary: var(--color-merlin-grey-700);
+  --color-text-placeholder: var(--color-merlin-grey-500);
+  --color-text-disabled: var(--color-merlin-grey-400);
+  --color-text-inverse: var(--color-merlin-white);
+  --color-text-inverse-disabled: var(--color-merlin-grey-200);
+  --color-text-helper: var(--color-merlin-grey-600);
+
+  /* Semantic Background Tokens */
+  --color-background-primary: #ffffff;
+  --color-background-secondary: var(--color-merlin-grey-50);
+  --color-background-disabled: var(--color-merlin-grey-100);
+
+  /* Primary color using merlin-blue-500 */
+  --color-primary: var(--color-merlin-blue-500);
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --color-merlin-blue-50: #1e3a8a;
-    --color-merlin-blue-100: #1e40af;
-    --color-merlin-blue-200: #1d4ed8;
-    --color-merlin-blue-300: #2563eb;
-    --color-merlin-blue-400: #3b82f6;
-    --color-merlin-blue-500: #60a5fa;
-    --color-merlin-blue-600: #93c5fd;
-    --color-merlin-blue-700: #bfdbfe;
-    --color-merlin-blue-800: #dbeafe;
-    --color-merlin-blue-900: #eff6ff; */
+    /* Future dark mode implementation */
   }
-}
-
-/* Primary color using merlin-blue-500 */
-:root {
-  --color-primary: var(--color-merlin-blue-500);
-  /* --color-primary-foreground: #ffffff; */
 }
