@@ -1,6 +1,12 @@
 @import 'tailwindcss';
 
 @theme {
+  /* Typography Tokens - Font Families */
+  --font-family-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  --font-family-serif: 'IBM Plex Serif', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-family-display: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
   /* Merlin Blue 500 */
   --color-merlin-blue-50: #edf1fa;
   --color-merlin-blue-100: #cedcfb;
@@ -156,10 +162,75 @@
   --typography-label-large: var(--font-size-base) var(--line-height-normal) var(--font-weight-medium);
   --typography-label-medium: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
   --typography-label-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-medium);
+
+  /* Additional Typography Tokens from Specimen */
+  
+  /* Paragraph Typography */
+  --typography-paragraph: var(--font-size-base) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-paragraph-large: var(--font-size-lg) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-paragraph-small: var(--font-size-sm) var(--line-height-relaxed) var(--font-weight-normal);
+  
+  /* Caption and Fine Print */
+  --typography-caption: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-caption-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  --typography-overline: var(--font-size-xs) var(--line-height-normal) var(--font-weight-semibold);
+  
+  /* Code and Technical Text */
+  --typography-code: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-code-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Special Purpose Typography */
+  --typography-blockquote: var(--font-size-lg) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-lead: var(--font-size-xl) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-muted: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* List Typography */
+  --typography-list: var(--font-size-base) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-list-small: var(--font-size-sm) var(--line-height-relaxed) var(--font-weight-normal);
+  
+  /* Table Typography */
+  --typography-table-header: var(--font-size-sm) var(--line-height-normal) var(--font-weight-semibold);
+  --typography-table-cell: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-table-caption: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Button Typography */
+  --typography-button: var(--font-size-sm) var(--line-height-none) var(--font-weight-medium);
+  --typography-button-large: var(--font-size-base) var(--line-height-none) var(--font-weight-medium);
+  --typography-button-small: var(--font-size-xs) var(--line-height-none) var(--font-weight-medium);
+  
+  /* Input Typography */
+  --typography-input: var(--font-size-base) var(--line-height-normal) var(--font-weight-normal);
+  --typography-input-small: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-placeholder: var(--font-size-base) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Tooltip and Helper Text */
+  --typography-tooltip: var(--font-size-xs) var(--line-height-tight) var(--font-weight-normal);
+  --typography-helper: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  --typography-error: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Navigation Typography */
+  --typography-nav: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
+  --typography-nav-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-medium);
+  --typography-breadcrumb: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Badge and Tag Typography */
+  --typography-badge: var(--font-size-xs) var(--line-height-none) var(--font-weight-medium);
+  --typography-tag: var(--font-size-xs) var(--line-height-none) var(--font-weight-normal);
+  
+  /* Utility Typography Classes */
+  --typography-mono: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-uppercase: var(--font-size-xs) var(--line-height-normal) var(--font-weight-semibold);
+  --typography-small-caps: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
 }
 
 /* Fallback CSS Custom Properties for broader compatibility */
 :root {
+  /* Typography Tokens - Font Families */
+  --font-family-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  --font-family-serif: 'IBM Plex Serif', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-family-display: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
   /* Merlin Blue 500 */
   --color-merlin-blue-50: #edf1fa;
   --color-merlin-blue-100: #cedcfb;
@@ -317,6 +388,92 @@
   --typography-label-large: var(--font-size-base) var(--line-height-normal) var(--font-weight-medium);
   --typography-label-medium: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
   --typography-label-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-medium);
+
+  /* Additional Typography Tokens from Specimen */
+  
+  /* Paragraph Typography */
+  --typography-paragraph: var(--font-size-base) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-paragraph-large: var(--font-size-lg) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-paragraph-small: var(--font-size-sm) var(--line-height-relaxed) var(--font-weight-normal);
+  
+  /* Caption and Fine Print */
+  --typography-caption: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-caption-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  --typography-overline: var(--font-size-xs) var(--line-height-normal) var(--font-weight-semibold);
+  
+  /* Code and Technical Text */
+  --typography-code: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-code-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Special Purpose Typography */
+  --typography-blockquote: var(--font-size-lg) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-lead: var(--font-size-xl) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-muted: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* List Typography */
+  --typography-list: var(--font-size-base) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-list-small: var(--font-size-sm) var(--line-height-relaxed) var(--font-weight-normal);
+  
+  /* Table Typography */
+  --typography-table-header: var(--font-size-sm) var(--line-height-normal) var(--font-weight-semibold);
+  --typography-table-cell: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-table-caption: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Button Typography */
+  --typography-button: var(--font-size-sm) var(--line-height-none) var(--font-weight-medium);
+  --typography-button-large: var(--font-size-base) var(--line-height-none) var(--font-weight-medium);
+  --typography-button-small: var(--font-size-xs) var(--line-height-none) var(--font-weight-medium);
+  
+  /* Input Typography */
+  --typography-input: var(--font-size-base) var(--line-height-normal) var(--font-weight-normal);
+  --typography-input-small: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-placeholder: var(--font-size-base) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Tooltip and Helper Text */
+  --typography-tooltip: var(--font-size-xs) var(--line-height-tight) var(--font-weight-normal);
+  --typography-helper: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  --typography-error: var(--font-size-xs) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Navigation Typography */
+  --typography-nav: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
+  --typography-nav-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-medium);
+  --typography-breadcrumb: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  
+  /* Badge and Tag Typography */
+  --typography-badge: var(--font-size-xs) var(--line-height-none) var(--font-weight-medium);
+  --typography-tag: var(--font-size-xs) var(--line-height-none) var(--font-weight-normal);
+  
+  /* Utility Typography Classes */
+  --typography-mono: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  --typography-uppercase: var(--font-size-xs) var(--line-height-normal) var(--font-weight-semibold);
+  --typography-small-caps: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
+}
+
+/* Global Font Declarations */
+body {
+  font-family: var(--font-family-sans);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Monospace elements */
+code, kbd, samp, pre {
+  font-family: var(--font-family-mono);
+}
+
+/* Display elements use Inter with tighter letter spacing */
+.font-display {
+  font-family: var(--font-family-display);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Code and technical text */
+.font-mono {
+  font-family: var(--font-family-mono);
+}
+
+/* Serif for special content */
+.font-serif {
+  font-family: var(--font-family-serif);
 }
 
 /* Dark mode support */
