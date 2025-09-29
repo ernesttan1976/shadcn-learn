@@ -975,6 +975,177 @@ export default function SamplePage() {
                         </div>
                     </section>
 
+                    {/* Navigation Menu */}
+                    <section className="space-y-4">
+                        <h3 className="text-2xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>Navigation Menu</h3>
+                        <Card>
+                            <CardContent className="p-6">
+                                <NavigationMenu>
+                                    <NavigationMenuList>
+                                        <NavigationMenuItem>
+                                            <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                                            <NavigationMenuContent>
+                                                <div className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                                    <div className="row-span-3">
+                                                        <NavigationMenuLink asChild>
+                                                            <a
+                                                                className="flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
+                                                                style={{ backgroundColor: 'var(--color-merlin-blue-500)' }}
+                                                                href="/"
+                                                            >
+                                                                <Palette className="h-6 w-6 text-white" />
+                                                                <div className="mb-2 mt-4 text-lg font-medium text-white">
+                                                                    Merlin Design System
+                                                                </div>
+                                                                <p className="text-sm leading-tight text-white/90">
+                                                                    Beautiful components built with Radix UI and Tailwind CSS.
+                                                                </p>
+                                                            </a>
+                                                        </NavigationMenuLink>
+                                                    </div>
+                                                    <div className="grid gap-1">
+                                                        <NavigationMenuLink asChild>
+                                                            <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                                <div className="text-sm font-medium leading-none">Introduction</div>
+                                                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                    Re-usable components built using Radix UI and Tailwind CSS.
+                                                                </p>
+                                                            </a>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                                <div className="text-sm font-medium leading-none">Installation</div>
+                                                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                    How to install dependencies and structure your app.
+                                                                </p>
+                                                            </a>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                                <div className="text-sm font-medium leading-none">Typography</div>
+                                                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                    Styles for headings, paragraphs, lists...etc
+                                                                </p>
+                                                            </a>
+                                                        </NavigationMenuLink>
+                                                    </div>
+                                                </div>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                        <NavigationMenuItem>
+                                            <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                                            <NavigationMenuContent>
+                                                <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                                                    <NavigationMenuLink asChild>
+                                                        <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                            <div className="text-sm font-medium leading-none">Alert Dialog</div>
+                                                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                A modal dialog that interrupts the user with important content.
+                                                            </p>
+                                                        </a>
+                                                    </NavigationMenuLink>
+                                                    <NavigationMenuLink asChild>
+                                                        <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                            <div className="text-sm font-medium leading-none">Hover Card</div>
+                                                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                For sighted users to preview content available behind a link.
+                                                            </p>
+                                                        </a>
+                                                    </NavigationMenuLink>
+                                                    <NavigationMenuLink asChild>
+                                                        <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                            <div className="text-sm font-medium leading-none">Progress</div>
+                                                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                Displays an indicator showing the completion progress.
+                                                            </p>
+                                                        </a>
+                                                    </NavigationMenuLink>
+                                                    <NavigationMenuLink asChild>
+                                                        <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                            <div className="text-sm font-medium leading-none">Scroll-area</div>
+                                                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                Visually or semantically separates content.
+                                                            </p>
+                                                        </a>
+                                                    </NavigationMenuLink>
+                                                    <NavigationMenuLink asChild>
+                                                        <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                            <div className="text-sm font-medium leading-none">Tabs</div>
+                                                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                A set of layered sections of content.
+                                                            </p>
+                                                        </a>
+                                                    </NavigationMenuLink>
+                                                    <NavigationMenuLink asChild>
+                                                        <a href="#" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                                                            <div className="text-sm font-medium leading-none">Tooltip</div>
+                                                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                A popup that displays information related to an element.
+                                                            </p>
+                                                        </a>
+                                                    </NavigationMenuLink>
+                                                </div>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                        <NavigationMenuItem>
+                                            <NavigationMenuLink href="#" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                                                Documentation
+                                            </NavigationMenuLink>
+                                        </NavigationMenuItem>
+                                    </NavigationMenuList>
+                                </NavigationMenu>
+                            </CardContent>
+                        </Card>
+                    </section>
+
+                    {/* Separator Examples */}
+                    <section className="space-y-4">
+                        <h3 className="text-2xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>Separators</h3>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Content Separation</CardTitle>
+                                <CardDescription>Visual and semantic content separators</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                <div>
+                                    <h4 className="text-sm font-medium leading-none" style={{ color: 'var(--color-text-primary)' }}>Horizontal Separator</h4>
+                                    <p className="text-sm text-muted-foreground mt-2 mb-4">
+                                        This is some content above the separator.
+                                    </p>
+                                    <Separator />
+                                    <p className="text-sm text-muted-foreground mt-4">
+                                        This is some content below the separator.
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h4 className="text-sm font-medium leading-none mb-4" style={{ color: 'var(--color-text-primary)' }}>Vertical Separator in Flex Layout</h4>
+                                    <div className="flex h-20 items-center space-x-4 text-sm">
+                                        <div>Blog</div>
+                                        <Separator orientation="vertical" />
+                                        <div>Docs</div>
+                                        <Separator orientation="vertical" />
+                                        <div>Source</div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4 className="text-sm font-medium leading-none mb-4" style={{ color: 'var(--color-text-primary)' }}>Separator in Lists</h4>
+                                    <div className="space-y-1">
+                                        <h4 className="text-sm font-medium leading-none">Settings</h4>
+                                        <p className="text-sm text-muted-foreground">Manage your account settings.</p>
+                                        <Separator className="my-4" />
+                                        <h4 className="text-sm font-medium leading-none">Profile</h4>
+                                        <p className="text-sm text-muted-foreground">Update your profile information.</p>
+                                        <Separator className="my-4" />
+                                        <h4 className="text-sm font-medium leading-none">Notifications</h4>
+                                        <p className="text-sm text-muted-foreground">Configure notification preferences.</p>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </section>
+
                     {/* Pagination */}
                     <section className="space-y-4">
                         <h3 className="text-2xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>Pagination</h3>
@@ -1095,6 +1266,244 @@ export default function SamplePage() {
                                 </code>
                             </div>
                         </div>
+                    </section>
+
+                    {/* Icon Showcase & Features */}
+                    <section className="space-y-4">
+                        <h3 className="text-2xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>Icon Buttons & Features</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            
+                            {/* Social Actions */}
+                            <Card>
+                                <CardHeader>
+                                    <div className="flex items-center space-x-2">
+                                        <Heart className="h-5 w-5" style={{ color: 'var(--color-merlin-red-500)' }} />
+                                        <CardTitle className="text-lg">Social Actions</CardTitle>
+                                    </div>
+                                </CardHeader>
+                                <CardContent className="space-y-3">
+                                    <div className="flex items-center space-x-2">
+                                        <Button variant="outline" size="sm">
+                                            <Heart className="h-4 w-4 mr-2" />
+                                            Like
+                                        </Button>
+                                        <Button variant="outline" size="sm">
+                                            <Star className="h-4 w-4 mr-2" />
+                                            Star
+                                        </Button>
+                                        <Button variant="outline" size="sm">
+                                            <Share className="h-4 w-4 mr-2" />
+                                            Share
+                                        </Button>
+                                    </div>
+                                    <div className="flex items-center space-x-2">
+                                        <Button size="sm" style={{ backgroundColor: 'var(--color-merlin-red-500)', color: 'white' }}>
+                                            <Heart className="h-4 w-4 mr-2" />
+                                            Liked
+                                        </Button>
+                                        <Button size="sm" style={{ backgroundColor: 'var(--color-merlin-amber-500)', color: 'white' }}>
+                                            <Star className="h-4 w-4 mr-2" />
+                                            Starred
+                                        </Button>
+                                    </div>
+                                </CardContent>
+                            </Card>
+
+                            {/* Contact Info */}
+                            <Card>
+                                <CardHeader>
+                                    <div className="flex items-center space-x-2">
+                                        <Phone className="h-5 w-5" style={{ color: 'var(--color-merlin-blue-500)' }} />
+                                        <CardTitle className="text-lg">Contact Info</CardTitle>
+                                    </div>
+                                </CardHeader>
+                                <CardContent className="space-y-3">
+                                    <div className="flex items-center space-x-3">
+                                        <Phone className="h-4 w-4" style={{ color: 'var(--color-merlin-blue-500)' }} />
+                                        <span className="text-sm">+1 (555) 123-4567</span>
+                                    </div>
+                                    <div className="flex items-center space-x-3">
+                                        <Mail className="h-4 w-4" style={{ color: 'var(--color-merlin-green-500)' }} />
+                                        <span className="text-sm">contact@example.com</span>
+                                    </div>
+                                    <div className="flex items-center space-x-3">
+                                        <MapPin className="h-4 w-4" style={{ color: 'var(--color-merlin-red-500)' }} />
+                                        <span className="text-sm">San Francisco, CA</span>
+                                    </div>
+                                    <div className="flex items-center space-x-3">
+                                        <Globe className="h-4 w-4" style={{ color: 'var(--color-merlin-slate-500)' }} />
+                                        <span className="text-sm">www.example.com</span>
+                                    </div>
+                                </CardContent>
+                            </Card>
+
+                            {/* System Status */}
+                            <Card>
+                                <CardHeader>
+                                    <div className="flex items-center space-x-2">
+                                        <Shield className="h-5 w-5" style={{ color: 'var(--color-merlin-green-500)' }} />
+                                        <CardTitle className="text-lg">System Status</CardTitle>
+                                    </div>
+                                </CardHeader>
+                                <CardContent className="space-y-3">
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center space-x-2">
+                                            <Shield className="h-4 w-4" style={{ color: 'var(--color-merlin-green-500)' }} />
+                                            <span className="text-sm">Security</span>
+                                        </div>
+                                        <Badge style={{ backgroundColor: 'var(--color-merlin-green-500)', color: 'white' }}>
+                                            Active
+                                        </Badge>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center space-x-2">
+                                            <Clock className="h-4 w-4" style={{ color: 'var(--color-merlin-blue-500)' }} />
+                                            <span className="text-sm">Uptime</span>
+                                        </div>
+                                        <Badge variant="outline">99.9%</Badge>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center space-x-2">
+                                            <Camera className="h-4 w-4" style={{ color: 'var(--color-merlin-amber-500)' }} />
+                                            <span className="text-sm">Monitoring</span>
+                                        </div>
+                                        <Badge style={{ backgroundColor: 'var(--color-merlin-amber-500)', color: 'white' }}>
+                                            Running
+                                        </Badge>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </section>
+
+                    {/* Table with Actions */}
+                    <section className="space-y-4">
+                        <h3 className="text-2xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>Advanced Table with Actions</h3>
+                        <Card>
+                            <CardHeader>
+                                <div className="flex items-center justify-between">
+                                    <div>
+                                        <CardTitle>User Management</CardTitle>
+                                        <CardDescription>Manage users with various actions and filters</CardDescription>
+                                    </div>
+                                    <div className="flex items-center space-x-2">
+                                        <Button variant="outline" size="sm">
+                                            <Filter className="h-4 w-4 mr-2" />
+                                            Filter
+                                        </Button>
+                                        <Button variant="outline" size="sm">
+                                            <SortAsc className="h-4 w-4 mr-2" />
+                                            Sort
+                                        </Button>
+                                    </div>
+                                </div>
+                            </CardHeader>
+                            <CardContent>
+                                <Table>
+                                    <TableCaption>List of users with management actions</TableCaption>
+                                    <TableHeader>
+                                        <TableRow>
+                                            <TableHead>User</TableHead>
+                                            <TableHead>Contact</TableHead>
+                                            <TableHead>Status</TableHead>
+                                            <TableHead>Actions</TableHead>
+                                        </TableRow>
+                                    </TableHeader>
+                                    <TableBody>
+                                        <TableRow>
+                                            <TableCell>
+                                                <div className="flex items-center space-x-3">
+                                                    <Avatar>
+                                                        <AvatarFallback style={{ backgroundColor: 'var(--color-merlin-blue-500)', color: 'white' }}>
+                                                            JD
+                                                        </AvatarFallback>
+                                                    </Avatar>
+                                                    <div>
+                                                        <p className="font-medium">John Doe</p>
+                                                        <p className="text-sm text-muted-foreground">Admin</p>
+                                                    </div>
+                                                </div>
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="space-y-1">
+                                                    <div className="flex items-center space-x-2">
+                                                        <Mail className="h-3 w-3 text-muted-foreground" />
+                                                        <span className="text-xs">john@example.com</span>
+                                                    </div>
+                                                    <div className="flex items-center space-x-2">
+                                                        <Phone className="h-3 w-3 text-muted-foreground" />
+                                                        <span className="text-xs">+1 (555) 123</span>
+                                                    </div>
+                                                </div>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Badge style={{ backgroundColor: 'var(--color-merlin-green-500)', color: 'white' }}>
+                                                    Active
+                                                </Badge>
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="flex items-center space-x-2">
+                                                    <Button variant="ghost" size="sm">
+                                                        <Edit className="h-4 w-4" />
+                                                    </Button>
+                                                    <Button variant="ghost" size="sm">
+                                                        <ExternalLink className="h-4 w-4" />
+                                                    </Button>
+                                                    <Button variant="ghost" size="sm" style={{ color: 'var(--color-merlin-red-500)' }}>
+                                                        <Trash2 className="h-4 w-4" />
+                                                    </Button>
+                                                </div>
+                                            </TableCell>
+                                        </TableRow>
+                                        <TableRow>
+                                            <TableCell>
+                                                <div className="flex items-center space-x-3">
+                                                    <Avatar>
+                                                        <AvatarFallback style={{ backgroundColor: 'var(--color-merlin-green-500)', color: 'white' }}>
+                                                            JS
+                                                        </AvatarFallback>
+                                                    </Avatar>
+                                                    <div>
+                                                        <p className="font-medium">Jane Smith</p>
+                                                        <p className="text-sm text-muted-foreground">Editor</p>
+                                                    </div>
+                                                </div>
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="space-y-1">
+                                                    <div className="flex items-center space-x-2">
+                                                        <Mail className="h-3 w-3 text-muted-foreground" />
+                                                        <span className="text-xs">jane@example.com</span>
+                                                    </div>
+                                                    <div className="flex items-center space-x-2">
+                                                        <Phone className="h-3 w-3 text-muted-foreground" />
+                                                        <span className="text-xs">+1 (555) 456</span>
+                                                    </div>
+                                                </div>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Badge style={{ backgroundColor: 'var(--color-merlin-amber-500)', color: 'white' }}>
+                                                    Pending
+                                                </Badge>
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="flex items-center space-x-2">
+                                                    <Button variant="ghost" size="sm">
+                                                        <Edit className="h-4 w-4" />
+                                                    </Button>
+                                                    <Button variant="ghost" size="sm">
+                                                        <ExternalLink className="h-4 w-4" />
+                                                    </Button>
+                                                    <Button variant="ghost" size="sm" style={{ color: 'var(--color-merlin-red-500)' }}>
+                                                        <Trash2 className="h-4 w-4" />
+                                                    </Button>
+                                                </div>
+                                            </TableCell>
+                                        </TableRow>
+                                    </TableBody>
+                                </Table>
+                            </CardContent>
+                        </Card>
                     </section>
 
                     {/* Accordion */}
