@@ -1,104 +1,118 @@
 @import 'tailwindcss';
 
-:root {
+@theme {
   /* Merlin Blue 500 */
-  --merlin-blue-50: #edf1fa;
-  --merlin-blue-100: #cedcfb;
-  --merlin-blue-200: #a3bdf2;
-  --merlin-blue-300: #7796dd;
-  --merlin-blue-400: #3e62bb;
-  --merlin-blue-500: #2248a5;
-  --merlin-blue-600: #18358b;
-  --merlin-blue-700: #102771;
-  --merlin-blue-800: #071a5c;
-  --merlin-blue-900: #061347;
+  --color-merlin-blue-50: #edf1fa;
+  --color-merlin-blue-100: #cedcfb;
+  --color-merlin-blue-200: #a3bdf2;
+  --color-merlin-blue-300: #7796dd;
+  --color-merlin-blue-400: #3e62bb;
+  --color-merlin-blue-500: #2248a5;
+  --color-merlin-blue-600: #18358b;
+  --color-merlin-blue-700: #102771;
+  --color-merlin-blue-800: #071a5c;
+  --color-merlin-blue-900: #061347;
 
 
   /* Merlin Grey 500 */
-  --merlin-grey-50: #f8f8f8;
-  --merlin-grey-100: #f0f0f0;
-  --merlin-grey-200: #e5e5e5;
-  --merlin-grey-300: #d4d4d4;
-  --merlin-grey-400: #bcbcbc;
-  --merlin-grey-500: #737373;
-  --merlin-grey-600: #676767;
-  --merlin-grey-700: #545454;
-  --merlin-grey-800: #363636;
-  --merlin-grey-900: #262626;
+  --color-merlin-grey-50: #f8f8f8;
+  --color-merlin-grey-100: #f0f0f0;
+  --color-merlin-grey-200: #e5e5e5;
+  --color-merlin-grey-300: #d4d4d4;
+  --color-merlin-grey-400: #bcbcbc;
+  --color-merlin-grey-500: #737373;
+  --color-merlin-grey-600: #676767;
+  --color-merlin-grey-700: #545454;
+  --color-merlin-grey-800: #363636;
+  --color-merlin-grey-900: #262626;
 
   /* Merlin Black */
-  --merlin-black: #161616;
+  --color-merlin-black: #161616;
 
   /* Merlin White */
-  --merlin-white: #fcfcfc;
+  --color-merlin-white: #fcfcfc;
 
   /* Merlin Slate 500 */
-  --merlin-slate-50: #e8ecf2;
-  --merlin-slate-100: #e3f1f9;
-  --merlin-slate-200: #c9e1f4;
-  --merlin-slate-300: #a4c3df;
-  --merlin-slate-400: #809fc0;
-  --merlin-slate-500: #547197;
-  --merlin-slate-600: #3d5881;
-  --merlin-slate-700: #2a416c;
-  --merlin-slate-800: #1a2d57;
-  --merlin-slate-900: #101e48;
+  --color-merlin-slate-50: #e8ecf2;
+  --color-merlin-slate-100: #e3f1f9;
+  --color-merlin-slate-200: #c9e1f4;
+  --color-merlin-slate-300: #a4c3df;
+  --color-merlin-slate-400: #809fc0;
+  --color-merlin-slate-500: #547197;
+  --color-merlin-slate-600: #3d5881;
+  --color-merlin-slate-700: #2a416c;
+  --color-merlin-slate-800: #1a2d57;
+  --color-merlin-slate-900: #101e48;
 
   /* Merlin Green 500 */
-  --merlin-green-50: #e6fbdb;
-  --merlin-green-100: #d9f8cf;
-  --merlin-green-200: #aef1a2;
-  --merlin-green-300: #74d76d;
-  --merlin-green-400: #43b046;
-  --merlin-green-500: #167c22;
-  --merlin-green-600: #106a23;
-  --merlin-green-700: #0b5922;
-  --merlin-green-800: #074720;
-  --merlin-green-900: #043b1f;
+  --color-merlin-green-50: #e6fbdb;
+  --color-merlin-green-100: #d9f8cf;
+  --color-merlin-green-200: #aef1a2;
+  --color-merlin-green-300: #74d76d;
+  --color-merlin-green-400: #43b046;
+  --color-merlin-green-500: #167c22;
+  --color-merlin-green-600: #106a23;
+  --color-merlin-green-700: #0b5922;
+  --color-merlin-green-800: #074720;
+  --color-merlin-green-900: #043b1f;
 
   /* Merlin Amber 500 */
-  --merlin-amber-50: #fff9db;
-  --merlin-amber-100: #fef2cb;
-  --merlin-amber-200: #fee198;
-  --merlin-amber-300: #fdcc65;
-  --merlin-amber-400: #fbb73e;
-  --merlin-amber-500: #f99500;
-  --merlin-amber-600: #d67700;
-  --merlin-amber-700: #b35c00;
-  --merlin-amber-800: #904400;
-  --merlin-amber-900: #773400;
+  --color-merlin-amber-50: #fff9db;
+  --color-merlin-amber-100: #fef2cb;
+  --color-merlin-amber-200: #fee198;
+  --color-merlin-amber-300: #fdcc65;
+  --color-merlin-amber-400: #fbb73e;
+  --color-merlin-amber-500: #f99500;
+  --color-merlin-amber-600: #d67700;
+  --color-merlin-amber-700: #b35c00;
+  --color-merlin-amber-800: #904400;
+  --color-merlin-amber-900: #773400;
 
   /* Merlin Red 500 */
-  --merlin-red-50: #ffefeb;
-  --merlin-red-100: #fce0d1;
-  --merlin-red-200: #fabaa4;
-  --merlin-red-300: #f28a74;
-  --merlin-red-400: #e65d51;
-  --merlin-red-500: #d61d1d;
-  --merlin-red-600: #b81523;
-  --merlin-red-700: #9a0e26;
-  --merlin-red-800: #7c0927;
-  --merlin-red-900: #660527;
+  --color-merlin-red-50: #ffefeb;
+  --color-merlin-red-100: #fce0d1;
+  --color-merlin-red-200: #fabaa4;
+  --color-merlin-red-300: #f28a74;
+  --color-merlin-red-400: #e65d51;
+  --color-merlin-red-500: #d61d1d;
+  --color-merlin-red-600: #b81523;
+  --color-merlin-red-700: #9a0e26;
+  --color-merlin-red-800: #7c0927;
+  --color-merlin-red-900: #660527;
+
+  /* Semantic Text Tokens */
+  --color-text-primary: var(--color-merlin-black);
+  --color-text-secondary: var(--color-merlin-grey-700);
+  --color-text-placeholder: var(--color-merlin-grey-500);
+  --color-text-disabled: var(--color-merlin-grey-400);
+  --color-text-inverse: var(--color-merlin-white);
+  --color-text-inverse-disabled: var(--color-merlin-grey-200);
+  --color-text-helper: var(--color-merlin-grey-600);
+
+  /* Semantic Background Tokens */
+  --color-background-primary: #ffffff;
+  --color-background-secondary: var(--color-merlin-grey-50);
+  --color-background-disabled: var(--color-merlin-grey-100);
 }
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --merlin-blue-50: #1e3a8a;
-    --merlin-blue-100: #1e40af;
-    --merlin-blue-200: #1d4ed8;
-    --merlin-blue-300: #2563eb;
-    --merlin-blue-400: #3b82f6;
-    --merlin-blue-500: #60a5fa;
-    --merlin-blue-600: #93c5fd;
-    --merlin-blue-700: #bfdbfe;
-    --merlin-blue-800: #dbeafe;
-    --merlin-blue-900: #eff6ff; */
+    /* --color-merlin-blue-50: #1e3a8a;
+    --color-merlin-blue-100: #1e40af;
+    --color-merlin-blue-200: #1d4ed8;
+    --color-merlin-blue-300: #2563eb;
+    --color-merlin-blue-400: #3b82f6;
+    --color-merlin-blue-500: #60a5fa;
+    --color-merlin-blue-600: #93c5fd;
+    --color-merlin-blue-700: #bfdbfe;
+    --color-merlin-blue-800: #dbeafe;
+    --color-merlin-blue-900: #eff6ff; */
   }
 }
 
 /* Primary color using merlin-blue-500 */
 :root {
-  --color-primary: var(--merlin-blue-500);
+  --color-primary: var(--color-merlin-blue-500);
   /* --color-primary-foreground: #ffffff; */
 }
