@@ -188,6 +188,11 @@ export default function SamplePage() {
     const [sliderValue, setSliderValue] = useState([50])
     const [isSheetOpen, setIsSheetOpen] = useState(false)
     const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date())
+    const [datePickerDate, setDatePickerDate] = useState<Date | undefined>(undefined)
+    const [dateRange, setDateRange] = useState<{from: Date | undefined; to: Date | undefined}>({
+        from: undefined,
+        to: undefined,
+    })
 
     const toggleTheme = () => {
         setIsDark(!isDark)
@@ -1503,9 +1508,8 @@ iiiiiiiiii  |  10 characters
                     {/* Carousel Section */}
                     <section className="space-y-4">
                         <h3 className="text-2xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>Carousel</h3>
-                        <Card>
-                            <CardContent className="p-6">
-                                <Carousel className="w-full max-w-xs mx-auto">
+
+                                {/* <Carousel className="w-full max-w-xs mx-auto">
                                     <CarouselContent>
                                         {carouselItems.map((item) => (
                                             <CarouselItem key={item.id}>
@@ -1522,9 +1526,27 @@ iiiiiiiiii  |  10 characters
                                     </CarouselContent>
                                     <CarouselPrevious />
                                     <CarouselNext />
+                                </Carousel> */}
+
+                                <Carousel>
+                                    <CarouselContent>
+                                    {carouselItems.map((item) => (
+                                        <CarouselItem key={item.id}className="md:basis-1/2 lg:basis-1/3">
+                                            <Card>
+                                                <CardContent className="flex aspect-square items-center justify-center p-6" style={{ backgroundColor: item.color }}>
+                                                    <div className="text-center text-white">
+                                                        <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
+                                                        <p className="text-sm opacity-90">{item.description}</p>
+                                                    </div>
+                                                </CardContent>
+                                            </Card>
+                                        </CarouselItem>
+                                    ))}
+                                        </CarouselContent>
+                                        <CarouselPrevious />
+                                        <CarouselNext />
                                 </Carousel>
-                            </CardContent>
-                        </Card>
+
                     </section>
 
                     {/* Forms Section */}
@@ -1888,6 +1910,89 @@ iiiiiiiiii  |  10 characters
                                         onSelect={setSelectedDate}
                                         className="rounded-md border"
                                     />
+                                </CardContent>
+                            </Card>
+
+                            {/* Date Picker */}
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle>Date Picker</CardTitle>
+                                    <CardDescription>Select a date using a popover calendar</CardDescription>
+                                </CardHeader>
+                                <CardContent className="space-y-4">
+                                    <div className="space-y-2">
+                                        <Label>Select Date</Label>
+                                        <Popover>
+                                            <PopoverTrigger asChild>
+                                                <Button
+                                                    variant="outline"
+                                                    className="w-[240px] justify-start text-left font-normal"
+                                                >
+                                                    <CalendarIcon className="mr-2 h-4 w-4" />
+                                                    {datePickerDate ? datePickerDate.toLocaleDateString() : "Pick a date"}
+                                                </Button>
+                                            </PopoverTrigger>
+                                            <PopoverContent className="w-auto p-0" align="start">
+                                                <Calendar
+                                                    mode="single"
+                                                    selected={datePickerDate}
+                                                    onSelect={setDatePickerDate}
+                                                    initialFocus
+                                                />
+                                            </PopoverContent>
+                                        </Popover>
+                                    </div>
+                                </CardContent>
+                            </Card>
+
+                            {/* Date Range Picker */}
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle>Date Range Picker</CardTitle>
+                                    <CardDescription>Select a date range using a popover calendar</CardDescription>
+                                </CardHeader>
+                                <CardContent className="space-y-4">
+                                    <div className="space-y-2">
+                                        <Label>Select Date Range</Label>
+                                        <Popover>
+                                            <PopoverTrigger asChild>
+                                                <Button
+                                                    variant="outline"
+                                                    className="w-[300px] justify-start text-left font-normal"
+                                                >
+                                                    <CalendarIcon className="mr-2 h-4 w-4" />
+                                                    {dateRange.from ? (
+                                                        dateRange.to ? (
+                                                            <>
+                                                                {dateRange.from.toLocaleDateString()} - {dateRange.to.toLocaleDateString()}
+                                                            </>
+                                                        ) : (
+                                                            dateRange.from.toLocaleDateString()
+                                                        )
+                                                    ) : (
+                                                        "Pick a date range"
+                                                    )}
+                                                </Button>
+                                            </PopoverTrigger>
+                                            <PopoverContent className="w-auto p-0" align="start">
+                                                <Calendar
+                                                    mode="range"
+                                                    selected={{
+                                                        from: dateRange.from,
+                                                        to: dateRange.to
+                                                    }}
+                                                    onSelect={(range) => {
+                                                        setDateRange({
+                                                            from: range?.from,
+                                                            to: range?.to
+                                                        })
+                                                    }}
+                                                    numberOfMonths={2}
+                                                    initialFocus
+                                                />
+                                            </PopoverContent>
+                                        </Popover>
+                                    </div>
                                 </CardContent>
                             </Card>
                         </div>
