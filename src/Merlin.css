@@ -93,6 +93,69 @@
   --color-background-primary: #ffffff;
   --color-background-secondary: var(--color-merlin-grey-50);
   --color-background-disabled: var(--color-merlin-grey-100);
+
+  /* Typography Tokens - Font Sizes */
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+  --font-size-6xl: 3.75rem;    /* 60px */
+  --font-size-7xl: 4.5rem;     /* 72px */
+  --font-size-8xl: 6rem;       /* 96px */
+  --font-size-9xl: 8rem;       /* 128px */
+
+  /* Typography Tokens - Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Typography Tokens - Font Weights */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Typography Tokens - Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* Semantic Typography Tokens */
+  --typography-display-large: var(--font-size-9xl) var(--line-height-none) var(--font-weight-black);
+  --typography-display-medium: var(--font-size-8xl) var(--line-height-none) var(--font-weight-extrabold);
+  --typography-display-small: var(--font-size-7xl) var(--line-height-tight) var(--font-weight-bold);
+  
+  --typography-headline-large: var(--font-size-6xl) var(--line-height-tight) var(--font-weight-bold);
+  --typography-headline-medium: var(--font-size-5xl) var(--line-height-tight) var(--font-weight-semibold);
+  --typography-headline-small: var(--font-size-4xl) var(--line-height-snug) var(--font-weight-semibold);
+  
+  --typography-title-large: var(--font-size-3xl) var(--line-height-snug) var(--font-weight-semibold);
+  --typography-title-medium: var(--font-size-2xl) var(--line-height-normal) var(--font-weight-medium);
+  --typography-title-small: var(--font-size-xl) var(--line-height-normal) var(--font-weight-medium);
+  
+  --typography-body-large: var(--font-size-lg) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-body-medium: var(--font-size-base) var(--line-height-normal) var(--font-weight-normal);
+  --typography-body-small: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  
+  --typography-label-large: var(--font-size-base) var(--line-height-normal) var(--font-weight-medium);
+  --typography-label-medium: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
+  --typography-label-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-medium);
 }
 
 /* Fallback CSS Custom Properties for broader compatibility */
@@ -191,6 +254,69 @@
 
   /* Primary color using merlin-blue-500 */
   --color-primary: var(--color-merlin-blue-500);
+
+  /* Typography Tokens - Font Sizes */
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+  --font-size-6xl: 3.75rem;    /* 60px */
+  --font-size-7xl: 4.5rem;     /* 72px */
+  --font-size-8xl: 6rem;       /* 96px */
+  --font-size-9xl: 8rem;       /* 128px */
+
+  /* Typography Tokens - Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Typography Tokens - Font Weights */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Typography Tokens - Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* Semantic Typography Tokens */
+  --typography-display-large: var(--font-size-9xl) var(--line-height-none) var(--font-weight-black);
+  --typography-display-medium: var(--font-size-8xl) var(--line-height-none) var(--font-weight-extrabold);
+  --typography-display-small: var(--font-size-7xl) var(--line-height-tight) var(--font-weight-bold);
+  
+  --typography-headline-large: var(--font-size-6xl) var(--line-height-tight) var(--font-weight-bold);
+  --typography-headline-medium: var(--font-size-5xl) var(--line-height-tight) var(--font-weight-semibold);
+  --typography-headline-small: var(--font-size-4xl) var(--line-height-snug) var(--font-weight-semibold);
+  
+  --typography-title-large: var(--font-size-3xl) var(--line-height-snug) var(--font-weight-semibold);
+  --typography-title-medium: var(--font-size-2xl) var(--line-height-normal) var(--font-weight-medium);
+  --typography-title-small: var(--font-size-xl) var(--line-height-normal) var(--font-weight-medium);
+  
+  --typography-body-large: var(--font-size-lg) var(--line-height-relaxed) var(--font-weight-normal);
+  --typography-body-medium: var(--font-size-base) var(--line-height-normal) var(--font-weight-normal);
+  --typography-body-small: var(--font-size-sm) var(--line-height-normal) var(--font-weight-normal);
+  
+  --typography-label-large: var(--font-size-base) var(--line-height-normal) var(--font-weight-medium);
+  --typography-label-medium: var(--font-size-sm) var(--line-height-normal) var(--font-weight-medium);
+  --typography-label-small: var(--font-size-xs) var(--line-height-normal) var(--font-weight-medium);
 }
 
 /* Dark mode support */
