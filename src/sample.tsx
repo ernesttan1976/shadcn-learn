@@ -495,6 +495,452 @@ export default function SamplePage() {
                 {/* Main Content */}
                 <main className="container mx-auto px-4 py-6 space-y-8">
 
+                    {/* Typography Section */}
+                    <section className="space-y-8">
+                        <div className="text-center space-y-4">
+                            <h2 style={{ 
+                                fontSize: 'var(--font-size-7xl)', 
+                                fontWeight: 'var(--font-weight-bold)', 
+                                lineHeight: 'var(--line-height-tight)', 
+                                color: 'var(--color-text-primary)' 
+                            }}>
+                                Typography System
+                            </h2>
+                            <p style={{ 
+                                fontSize: 'var(--font-size-lg)', 
+                                fontWeight: 'var(--font-weight-normal)', 
+                                lineHeight: 'var(--line-height-relaxed)', 
+                                color: 'var(--color-text-secondary)' 
+                            }} className="max-w-3xl mx-auto">
+                                Comprehensive typography tokens for consistent text styling across your application.
+                            </p>
+                        </div>
+
+                        {/* Display Typography */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Display Typography</CardTitle>
+                                <CardDescription>Large, attention-grabbing headlines for hero sections and major content areas</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-display-large</code>
+                                        <Badge variant="outline">128px / font-black</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-9xl)', 
+                                        fontWeight: 'var(--font-weight-black)', 
+                                        lineHeight: 'var(--line-height-none)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Massive Impact
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-display-medium</code>
+                                        <Badge variant="outline">96px / font-extrabold</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-8xl)', 
+                                        fontWeight: 'var(--font-weight-extrabold)', 
+                                        lineHeight: 'var(--line-height-none)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Major Headlines
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-display-small</code>
+                                        <Badge variant="outline">72px / font-bold</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-7xl)', 
+                                        fontWeight: 'var(--font-weight-bold)', 
+                                        lineHeight: 'var(--line-height-tight)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Bold Statements
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Headline Typography */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Headline Typography</CardTitle>
+                                <CardDescription>Section headers and important titles throughout your interface</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-headline-large</code>
+                                        <Badge variant="outline">60px / font-bold</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-6xl)', 
+                                        fontWeight: 'var(--font-weight-bold)', 
+                                        lineHeight: 'var(--line-height-tight)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Great for very large titles
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-headline-medium</code>
+                                        <Badge variant="outline">48px / font-semibold</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-5xl)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        lineHeight: 'var(--line-height-tight)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Suitable for large headings
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-headline-small</code>
+                                        <Badge variant="outline">36px / font-semibold</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-4xl)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        lineHeight: 'var(--line-height-snug)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Perfect for major section headers
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Title Typography */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Title Typography</CardTitle>
+                                <CardDescription>Subsection headers and component titles</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-title-large</code>
+                                        <Badge variant="outline">30px / font-semibold</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-3xl)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        lineHeight: 'var(--line-height-snug)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Used for larger informal headers
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-title-medium</code>
+                                        <Badge variant="outline">24px / font-medium</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-2xl)', 
+                                        fontWeight: 'var(--font-weight-medium)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        For bold titles and standout content
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-title-small</code>
+                                        <Badge variant="outline">20px / font-medium</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-xl)', 
+                                        fontWeight: 'var(--font-weight-medium)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Smaller titles and card headers
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Body Typography */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Body Typography</CardTitle>
+                                <CardDescription>Main content text in various sizes for different contexts</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-body-large</code>
+                                        <Badge variant="outline">18px / font-normal / line-height-relaxed</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-lg)', 
+                                        fontWeight: 'var(--font-weight-normal)', 
+                                        lineHeight: 'var(--line-height-relaxed)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        This is large body text, perfect for introductory paragraphs and important content that needs more presence. The relaxed line height makes it comfortable to read while the larger size draws attention to key information.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-body-medium</code>
+                                        <Badge variant="outline">16px / font-normal / line-height-normal</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-base)', 
+                                        fontWeight: 'var(--font-weight-normal)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        This is the standard body text size, ideal for most content throughout your application. It provides excellent readability while maintaining a clean, professional appearance. This size works well for articles, descriptions, and general text content.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-body-small</code>
+                                        <Badge variant="outline">14px / font-normal</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-sm)', 
+                                        fontWeight: 'var(--font-weight-normal)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Small body text is perfect for secondary information, captions, metadata, and supporting content. While compact, it remains highly legible and works well in cards, sidebars, and footnotes.
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Label Typography */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Label Typography</CardTitle>
+                                <CardDescription>UI labels, buttons, and interactive elements</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-label-large</code>
+                                        <Badge variant="outline">16px / font-medium</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-base)', 
+                                        fontWeight: 'var(--font-weight-medium)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Large Label Text - Button Labels & Important UI Elements
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-label-medium</code>
+                                        <Badge variant="outline">14px / font-medium</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-sm)', 
+                                        fontWeight: 'var(--font-weight-medium)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Medium Label Text - Form Labels & Navigation
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center gap-2">
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--typography-label-small</code>
+                                        <Badge variant="outline">12px / font-medium</Badge>
+                                    </div>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-xs)', 
+                                        fontWeight: 'var(--font-weight-medium)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Small Label Text - Tags, Badges & Compact UI
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Typography Usage Examples */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Typography in Context</CardTitle>
+                                <CardDescription>Real-world examples of typography combinations</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-8">
+                                {/* Article Example */}
+                                <div className="space-y-4 p-6 rounded-lg border" style={{ backgroundColor: 'var(--color-background-secondary)' }}>
+                                    <h3 style={{ 
+                                        fontSize: 'var(--font-size-4xl)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        lineHeight: 'var(--line-height-snug)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Typography Best Practices
+                                    </h3>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-lg)', 
+                                        fontWeight: 'var(--font-weight-normal)', 
+                                        lineHeight: 'var(--line-height-relaxed)', 
+                                        color: 'var(--color-text-secondary)' 
+                                    }}>
+                                        A comprehensive guide to using typography effectively in your design system.
+                                    </p>
+                                    <h4 style={{ 
+                                        fontSize: 'var(--font-size-2xl)', 
+                                        fontWeight: 'var(--font-weight-medium)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Hierarchy and Scale
+                                    </h4>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-base)', 
+                                        fontWeight: 'var(--font-weight-normal)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Good typography establishes clear visual hierarchy through consistent use of font sizes, weights, and spacing. Our typography system provides semantic tokens that make it easy to maintain consistency across your entire application.
+                                    </p>
+                                    <h5 style={{ 
+                                        fontSize: 'var(--font-size-xl)', 
+                                        fontWeight: 'var(--font-weight-medium)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Implementation Guidelines
+                                    </h5>
+                                    <p style={{ 
+                                        fontSize: 'var(--font-size-sm)', 
+                                        fontWeight: 'var(--font-weight-normal)', 
+                                        lineHeight: 'var(--line-height-normal)', 
+                                        color: 'var(--color-text-secondary)' 
+                                    }}>
+                                        Use semantic typography tokens rather than hard-coded font sizes. This ensures your design remains consistent and makes future updates easier to implement across your entire design system.
+                                    </p>
+                                </div>
+
+                                {/* Component Example */}
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div className="p-6 rounded-lg border">
+                                        <h4 style={{ 
+                                            fontSize: 'var(--font-size-2xl)', 
+                                            fontWeight: 'var(--font-weight-medium)', 
+                                            lineHeight: 'var(--line-height-normal)', 
+                                            color: 'var(--color-text-primary)' 
+                                        }} className="mb-3">
+                                            Product Card
+                                        </h4>
+                                        <div className="space-y-2">
+                                            <h5 style={{ 
+                                                fontSize: 'var(--font-size-xl)', 
+                                                fontWeight: 'var(--font-weight-medium)', 
+                                                lineHeight: 'var(--line-height-normal)', 
+                                                color: 'var(--color-text-primary)' 
+                                            }}>
+                                                Premium Headphones
+                                            </h5>
+                                            <p style={{ 
+                                                fontSize: 'var(--font-size-base)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                lineHeight: 'var(--line-height-normal)', 
+                                                color: 'var(--color-text-secondary)' 
+                                            }}>
+                                                High-quality wireless headphones with noise cancellation
+                                            </p>
+                                            <div className="flex items-center justify-between mt-4">
+                                                <span style={{ 
+                                                    fontSize: 'var(--font-size-base)', 
+                                                    fontWeight: 'var(--font-weight-medium)', 
+                                                    lineHeight: 'var(--line-height-normal)', 
+                                                    color: 'var(--color-merlin-blue-500)' 
+                                                }}>
+                                                    $299.99
+                                                </span>
+                                                <Badge style={{ 
+                                                    fontSize: 'var(--font-size-xs)', 
+                                                    fontWeight: 'var(--font-weight-medium)', 
+                                                    lineHeight: 'var(--line-height-normal)' 
+                                                }} variant="secondary">
+                                                    Free Shipping
+                                                </Badge>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="p-6 rounded-lg border">
+                                        <h4 style={{ 
+                                            fontSize: 'var(--font-size-2xl)', 
+                                            fontWeight: 'var(--font-weight-medium)', 
+                                            lineHeight: 'var(--line-height-normal)', 
+                                            color: 'var(--color-text-primary)' 
+                                        }} className="mb-3">
+                                            User Profile
+                                        </h4>
+                                        <div className="space-y-2">
+                                            <h5 style={{ 
+                                                fontSize: 'var(--font-size-xl)', 
+                                                fontWeight: 'var(--font-weight-medium)', 
+                                                lineHeight: 'var(--line-height-normal)', 
+                                                color: 'var(--color-text-primary)' 
+                                            }}>
+                                                Sarah Johnson
+                                            </h5>
+                                            <p style={{ 
+                                                fontSize: 'var(--font-size-sm)', 
+                                                fontWeight: 'var(--font-weight-medium)', 
+                                                lineHeight: 'var(--line-height-normal)', 
+                                                color: 'var(--color-text-secondary)' 
+                                            }}>
+                                                Senior Product Designer
+                                            </p>
+                                            <p style={{ 
+                                                fontSize: 'var(--font-size-sm)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                lineHeight: 'var(--line-height-normal)', 
+                                                color: 'var(--color-text-secondary)' 
+                                            }}>
+                                                Passionate about creating intuitive user experiences and building design systems that scale.
+                                            </p>
+                                            <div className="flex gap-2 mt-3">
+                                                <Badge style={{ 
+                                                    fontSize: 'var(--font-size-xs)', 
+                                                    fontWeight: 'var(--font-weight-medium)', 
+                                                    lineHeight: 'var(--line-height-normal)' 
+                                                }} variant="outline">Design</Badge>
+                                                <Badge style={{ 
+                                                    fontSize: 'var(--font-size-xs)', 
+                                                    fontWeight: 'var(--font-weight-medium)', 
+                                                    lineHeight: 'var(--line-height-normal)' 
+                                                }} variant="outline">UX</Badge>
+                                                <Badge style={{ 
+                                                    fontSize: 'var(--font-size-xs)', 
+                                                    fontWeight: 'var(--font-weight-medium)', 
+                                                    lineHeight: 'var(--line-height-normal)' 
+                                                }} variant="outline">Systems</Badge>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </section>
+
                     {/* Hero Section with Cards */}
                     <section className="space-y-6">
                         <div className="text-center space-y-4">
