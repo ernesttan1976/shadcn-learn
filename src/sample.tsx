@@ -776,6 +776,232 @@ export default function SamplePage() {
                             </CardContent>
                         </Card>
 
+                        {/* Font Family Examples */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Font Families</CardTitle>
+                                <CardDescription>Inter, IBM Plex Mono, and IBM Plex Serif typography demonstrations</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-8">
+                                {/* Inter Sans Examples */}
+                                <div className="space-y-4 p-6 rounded-lg border" style={{ backgroundColor: 'var(--color-background-secondary)' }}>
+                                    <div className="flex items-center gap-2 mb-4">
+                                        <h3 style={{ 
+                                            fontSize: 'var(--font-size-2xl)', 
+                                            fontWeight: 'var(--font-weight-semibold)', 
+                                            fontFamily: 'var(--font-family-sans)',
+                                            color: 'var(--color-text-primary)' 
+                                        }}>
+                                            Inter Sans-serif
+                                        </h3>
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--font-family-sans</code>
+                                    </div>
+                                    
+                                    <div style={{ fontFamily: 'var(--font-family-sans)' }}>
+                                        <p style={{ 
+                                            fontSize: 'var(--font-size-lg)', 
+                                            fontWeight: 'var(--font-weight-normal)', 
+                                            lineHeight: 'var(--line-height-relaxed)', 
+                                            color: 'var(--color-text-primary)',
+                                            marginBottom: '1rem'
+                                        }}>
+                                            Inter is a typeface carefully crafted & designed for computer screens. 
+                                            Inter features a tall x-height to aid in readability of mixed-case and lower-case text.
+                                        </p>
+                                        
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                            <div>
+                                                <h4 style={{ 
+                                                    fontSize: 'var(--font-size-base)', 
+                                                    fontWeight: 'var(--font-weight-semibold)', 
+                                                    color: 'var(--color-text-primary)',
+                                                    marginBottom: '0.5rem'
+                                                }}>
+                                                    Character Set
+                                                </h4>
+                                                <p style={{ 
+                                                    fontSize: 'var(--font-size-lg)', 
+                                                    fontWeight: 'var(--font-weight-normal)', 
+                                                    color: 'var(--color-text-secondary)',
+                                                    letterSpacing: '0.5px'
+                                                }}>
+                                                    ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+                                                    abcdefghijklmnopqrstuvwxyz<br/>
+                                                    0123456789 !@#$%^&*()
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <h4 style={{ 
+                                                    fontSize: 'var(--font-size-base)', 
+                                                    fontWeight: 'var(--font-weight-semibold)', 
+                                                    color: 'var(--color-text-primary)',
+                                                    marginBottom: '0.5rem'
+                                                }}>
+                                                    Weight Variations
+                                                </h4>
+                                                <div className="space-y-1">
+                                                    <p style={{ fontSize: 'var(--font-size-sm)', fontWeight: 300, color: 'var(--color-text-secondary)' }}>Light (300)</p>
+                                                    <p style={{ fontSize: 'var(--font-size-sm)', fontWeight: 400, color: 'var(--color-text-secondary)' }}>Regular (400)</p>
+                                                    <p style={{ fontSize: 'var(--font-size-sm)', fontWeight: 500, color: 'var(--color-text-secondary)' }}>Medium (500)</p>
+                                                    <p style={{ fontSize: 'var(--font-size-sm)', fontWeight: 600, color: 'var(--color-text-secondary)' }}>Semibold (600)</p>
+                                                    <p style={{ fontSize: 'var(--font-size-sm)', fontWeight: 700, color: 'var(--color-text-secondary)' }}>Bold (700)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* IBM Plex Mono Examples */}
+                                <div className="space-y-4 p-6 rounded-lg border" style={{ backgroundColor: 'var(--color-background-secondary)' }}>
+                                    <div className="flex items-center gap-2 mb-4">
+                                        <h3 style={{ 
+                                            fontSize: 'var(--font-size-2xl)', 
+                                            fontWeight: 'var(--font-weight-semibold)', 
+                                            fontFamily: 'var(--font-family-sans)',
+                                            color: 'var(--color-text-primary)' 
+                                        }}>
+                                            IBM Plex Mono
+                                        </h3>
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--font-family-mono</code>
+                                    </div>
+                                    
+                                    <div style={{ fontFamily: 'var(--font-family-mono)' }}>
+                                        <p style={{ 
+                                            fontSize: 'var(--font-size-base)', 
+                                            fontWeight: 'var(--font-weight-normal)', 
+                                            lineHeight: 'var(--line-height-relaxed)', 
+                                            color: 'var(--color-text-primary)',
+                                            marginBottom: '1rem'
+                                        }}>
+                                            IBM Plex Mono is a monospaced font designed for coding and technical documentation. 
+                                            Each character occupies the same amount of horizontal space.
+                                        </p>
+                                        
+                                        <div className="space-y-4">
+                                            <div>
+                                                <h4 style={{ 
+                                                    fontSize: 'var(--font-size-base)', 
+                                                    fontWeight: 'var(--font-weight-semibold)', 
+                                                    color: 'var(--color-text-primary)',
+                                                    marginBottom: '0.5rem',
+                                                    fontFamily: 'var(--font-family-sans)'
+                                                }}>
+                                                    Code Example
+                                                </h4>
+                                                <div className="p-4 rounded-lg bg-muted">
+                                                    <pre style={{ 
+                                                        fontSize: 'var(--font-size-sm)', 
+                                                        fontWeight: 'var(--font-weight-normal)', 
+                                                        color: 'var(--color-text-primary)',
+                                                        margin: 0,
+                                                        fontFamily: 'var(--font-family-mono)'
+                                                    }}>
+{`const typography = {
+  fontFamily: 'IBM Plex Mono',
+  fontSize: '14px',
+  lineHeight: 1.5,
+  letterSpacing: '0em'
+};
+
+function formatCode(text: string): string {
+  return text.trim().replace(/\\s+/g, ' ');
+}`}
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                            
+                                            <div>
+                                                <h4 style={{ 
+                                                    fontSize: 'var(--font-size-base)', 
+                                                    fontWeight: 'var(--font-weight-semibold)', 
+                                                    color: 'var(--color-text-primary)',
+                                                    marginBottom: '0.5rem',
+                                                    fontFamily: 'var(--font-family-sans)'
+                                                }}>
+                                                    Character Alignment
+                                                </h4>
+                                                <div className="p-4 rounded-lg bg-muted">
+                                                    <pre style={{ 
+                                                        fontSize: 'var(--font-size-sm)', 
+                                                        fontWeight: 'var(--font-weight-normal)', 
+                                                        color: 'var(--color-text-secondary)',
+                                                        margin: 0,
+                                                        fontFamily: 'var(--font-family-mono)'
+                                                    }}>
+{`WWWWWWWWWW  |  10 characters
+iiiiiiiiii  |  10 characters  
+1234567890  |  10 characters
+----------  |  10 characters`}
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* IBM Plex Serif Examples */}
+                                <div className="space-y-4 p-6 rounded-lg border" style={{ backgroundColor: 'var(--color-background-secondary)' }}>
+                                    <div className="flex items-center gap-2 mb-4">
+                                        <h3 style={{ 
+                                            fontSize: 'var(--font-size-2xl)', 
+                                            fontWeight: 'var(--font-weight-semibold)', 
+                                            fontFamily: 'var(--font-family-sans)',
+                                            color: 'var(--color-text-primary)' 
+                                        }}>
+                                            IBM Plex Serif
+                                        </h3>
+                                        <code className="text-sm px-2 py-1 rounded bg-muted">--font-family-serif</code>
+                                    </div>
+                                    
+                                    <div style={{ fontFamily: 'var(--font-family-serif)' }}>
+                                        <h4 style={{ 
+                                            fontSize: 'var(--font-size-3xl)', 
+                                            fontWeight: 'var(--font-weight-normal)', 
+                                            lineHeight: 'var(--line-height-tight)', 
+                                            color: 'var(--color-text-primary)',
+                                            marginBottom: '1rem'
+                                        }}>
+                                            The Art of Typography
+                                        </h4>
+                                        
+                                        <p style={{ 
+                                            fontSize: 'var(--font-size-lg)', 
+                                            fontWeight: 'var(--font-weight-normal)', 
+                                            lineHeight: 'var(--line-height-relaxed)', 
+                                            color: 'var(--color-text-primary)',
+                                            marginBottom: '1rem'
+                                        }}>
+                                            IBM Plex Serif is designed to work well in user interface (UI) environments as well as other mediums. 
+                                            This serif font provides excellent readability for longer form content and adds elegance to headlines.
+                                        </p>
+                                        
+                                        <blockquote style={{ 
+                                            fontSize: 'var(--font-size-xl)', 
+                                            fontWeight: 'var(--font-weight-normal)', 
+                                            lineHeight: 'var(--line-height-relaxed)', 
+                                            color: 'var(--color-text-secondary)',
+                                            fontStyle: 'italic',
+                                            borderLeft: '4px solid var(--color-merlin-blue-500)',
+                                            paddingLeft: '1rem',
+                                            margin: '1.5rem 0'
+                                        }}>
+                                            "Typography is the craft of endowing human language with a durable visual form."
+                                        </blockquote>
+                                        
+                                        <p style={{ 
+                                            fontSize: 'var(--font-size-base)', 
+                                            fontWeight: 'var(--font-weight-normal)', 
+                                            lineHeight: 'var(--line-height-relaxed)', 
+                                            color: 'var(--color-text-primary)'
+                                        }}>
+                                            The serif characteristics give text a more traditional, formal appearance while maintaining 
+                                            the modern sensibilities expected in contemporary digital interfaces.
+                                        </p>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
                         {/* Typography Usage Examples */}
                         <Card>
                             <CardHeader>
@@ -933,6 +1159,252 @@ export default function SamplePage() {
                                                     fontWeight: 'var(--font-weight-medium)', 
                                                     lineHeight: 'var(--line-height-normal)' 
                                                 }} variant="outline">Systems</Badge>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Additional Typography Tokens */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Extended Typography Tokens</CardTitle>
+                                <CardDescription>Additional semantic typography tokens for specific use cases</CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                {/* Code Typography */}
+                                <div className="space-y-3">
+                                    <h4 style={{ 
+                                        fontSize: 'var(--font-size-lg)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Code & Technical Text
+                                    </h4>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-code</code>
+                                            </div>
+                                            <code style={{ 
+                                                fontSize: 'var(--font-size-sm)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                fontFamily: 'var(--font-family-mono)',
+                                                color: 'var(--color-merlin-blue-600)',
+                                                backgroundColor: 'var(--color-merlin-grey-100)',
+                                                padding: '0.25rem 0.5rem',
+                                                borderRadius: '0.25rem'
+                                            }}>
+                                                npm install @merlin/typography
+                                            </code>
+                                        </div>
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-code-small</code>
+                                            </div>
+                                            <code style={{ 
+                                                fontSize: 'var(--font-size-xs)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                fontFamily: 'var(--font-family-mono)',
+                                                color: 'var(--color-merlin-blue-600)',
+                                                backgroundColor: 'var(--color-merlin-grey-100)',
+                                                padding: '0.25rem 0.5rem',
+                                                borderRadius: '0.25rem'
+                                            }}>
+                                                const API_KEY = 'sk-...'
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Caption Typography */}
+                                <div className="space-y-3">
+                                    <h4 style={{ 
+                                        fontSize: 'var(--font-size-lg)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Captions & Helper Text
+                                    </h4>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-caption</code>
+                                            </div>
+                                            <p style={{ 
+                                                fontSize: 'var(--font-size-sm)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                color: 'var(--color-text-secondary)' 
+                                            }}>
+                                                Figure 1: Typography system hierarchy showing font sizes from 12px to 128px
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-helper</code>
+                                            </div>
+                                            <p style={{ 
+                                                fontSize: 'var(--font-size-xs)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                color: 'var(--color-text-helper)' 
+                                            }}>
+                                                This field is required and must be at least 8 characters long
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-overline</code>
+                                            </div>
+                                            <p style={{ 
+                                                fontSize: 'var(--font-size-xs)', 
+                                                fontWeight: 'var(--font-weight-semibold)', 
+                                                color: 'var(--color-text-secondary)',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: 'var(--letter-spacing-wide)'
+                                            }}>
+                                                Section Header
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Navigation Typography */}
+                                <div className="space-y-3">
+                                    <h4 style={{ 
+                                        fontSize: 'var(--font-size-lg)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Navigation & Interactive
+                                    </h4>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-nav</code>
+                                            </div>
+                                            <nav className="space-y-1">
+                                                <a href="#" style={{ 
+                                                    fontSize: 'var(--font-size-sm)', 
+                                                    fontWeight: 'var(--font-weight-medium)', 
+                                                    color: 'var(--color-merlin-blue-500)',
+                                                    textDecoration: 'none',
+                                                    display: 'block'
+                                                }}>
+                                                    Dashboard
+                                                </a>
+                                                <a href="#" style={{ 
+                                                    fontSize: 'var(--font-size-sm)', 
+                                                    fontWeight: 'var(--font-weight-medium)', 
+                                                    color: 'var(--color-text-secondary)',
+                                                    textDecoration: 'none',
+                                                    display: 'block'
+                                                }}>
+                                                    Settings
+                                                </a>
+                                            </nav>
+                                        </div>
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-breadcrumb</code>
+                                            </div>
+                                            <nav style={{ 
+                                                fontSize: 'var(--font-size-sm)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                color: 'var(--color-text-secondary)' 
+                                            }}>
+                                                Home / Typography / Examples
+                                            </nav>
+                                        </div>
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-button</code>
+                                            </div>
+                                            <Button style={{ 
+                                                fontSize: 'var(--font-size-sm)', 
+                                                fontWeight: 'var(--font-weight-medium)',
+                                                lineHeight: 'var(--line-height-none)',
+                                                backgroundColor: 'var(--color-merlin-blue-500)', 
+                                                color: 'white' 
+                                            }}>
+                                                Save Changes
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Special Typography */}
+                                <div className="space-y-3">
+                                    <h4 style={{ 
+                                        fontSize: 'var(--font-size-lg)', 
+                                        fontWeight: 'var(--font-weight-semibold)', 
+                                        color: 'var(--color-text-primary)' 
+                                    }}>
+                                        Special Purpose
+                                    </h4>
+                                    <div className="space-y-4">
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-blockquote</code>
+                                            </div>
+                                            <blockquote style={{ 
+                                                fontSize: 'var(--font-size-lg)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                lineHeight: 'var(--line-height-relaxed)', 
+                                                color: 'var(--color-text-secondary)',
+                                                fontStyle: 'italic',
+                                                borderLeft: '3px solid var(--color-merlin-grey-300)',
+                                                paddingLeft: '1rem',
+                                                marginLeft: '0'
+                                            }}>
+                                                Good design is obvious. Great design is transparent.
+                                            </blockquote>
+                                        </div>
+                                        
+                                        <div>
+                                            <div className="mb-2 flex items-center gap-2">
+                                                <code className="text-sm px-2 py-1 rounded bg-muted">--typography-lead</code>
+                                            </div>
+                                            <p style={{ 
+                                                fontSize: 'var(--font-size-xl)', 
+                                                fontWeight: 'var(--font-weight-normal)', 
+                                                lineHeight: 'var(--line-height-relaxed)', 
+                                                color: 'var(--color-text-primary)'
+                                            }}>
+                                                This is a lead paragraph that introduces the main content with larger, more prominent text.
+                                            </p>
+                                        </div>
+
+                                        <div className="flex gap-2">
+                                            <div>
+                                                <div className="mb-2 flex items-center gap-2">
+                                                    <code className="text-sm px-2 py-1 rounded bg-muted">--typography-badge</code>
+                                                </div>
+                                                <Badge style={{ 
+                                                    fontSize: 'var(--font-size-xs)', 
+                                                    fontWeight: 'var(--font-weight-medium)',
+                                                    lineHeight: 'var(--line-height-none)',
+                                                    backgroundColor: 'var(--color-merlin-green-500)', 
+                                                    color: 'white' 
+                                                }}>
+                                                    New Feature
+                                                </Badge>
+                                            </div>
+                                            <div>
+                                                <div className="mb-2 flex items-center gap-2">
+                                                    <code className="text-sm px-2 py-1 rounded bg-muted">--typography-tag</code>
+                                                </div>
+                                                <span style={{ 
+                                                    fontSize: 'var(--font-size-xs)', 
+                                                    fontWeight: 'var(--font-weight-normal)',
+                                                    lineHeight: 'var(--line-height-none)',
+                                                    backgroundColor: 'var(--color-merlin-grey-200)',
+                                                    color: 'var(--color-text-secondary)',
+                                                    padding: '0.25rem 0.5rem',
+                                                    borderRadius: '9999px'
+                                                }}>
+                                                    typography
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
