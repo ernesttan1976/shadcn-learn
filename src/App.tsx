@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { Button } from "@/components/ui/button"
-import SamplePage from './sample.js'
+import SamplePage from './sample.tsx'
 import { Toaster } from 'sonner'
 
 function HomePage() {

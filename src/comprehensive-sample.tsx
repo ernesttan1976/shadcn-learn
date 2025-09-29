@@ -182,7 +182,7 @@ import {
     SortAsc,
 } from 'lucide-react'
 
-export default function SamplePage() {
+export default function ComprehensiveSample() {
     const [isDark, setIsDark] = useState(false)
     const [progress, setProgress] = useState(33)
     const [sliderValue, setSliderValue] = useState([50])
