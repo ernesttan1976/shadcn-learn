@@ -478,6 +478,23 @@ code, kbd, samp, pre {
 
 /* shadcn/ui CSS Variables */
 @layer base {
+  /* Override calendar transparency in popovers */
+  [data-slot="popover-content"] .group\/calendar {
+    background-color: hsl(var(--popover)) !important;
+  }
+
+  /* Fix all content transparency issues with wildcard */
+  [data-slot*="-content"] {
+    background-color: hsl(var(--popover)) !important;
+  }
+
+  /* Override for dialog-type components that should use --background */
+  [data-slot="dialog-content"],
+  [data-slot="alert-dialog-content"],
+  [data-slot="sheet-content"] {
+    background-color: hsl(var(--background)) !important;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -506,8 +523,8 @@ code, kbd, samp, pre {
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 240 5.9% 10%;
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
     --secondary: 240 3.7% 15.9%;

@@ -141,6 +141,9 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+// Custom components
+import DatePickerWithinInput from "@/components/shadcn-studio/date-picker/date-picker-04"
+
 // Icons from lucide-react
 import {
     Menu,
@@ -1913,37 +1916,17 @@ iiiiiiiiii  |  10 characters
                                 </CardContent>
                             </Card>
 
-                            {/* Date Picker */}
+                            {/* Date Picker with Input Field */}
                             <Card>
                                 <CardHeader>
-                                    <CardTitle>Date Picker</CardTitle>
-                                    <CardDescription>Select a date using a popover calendar</CardDescription>
+                                    <CardTitle>Date Picker Within Input</CardTitle>
+                                    <CardDescription>A date picker component integrated within an input field</CardDescription>
                                 </CardHeader>
-                                <CardContent className="space-y-4">
-                                    <div className="space-y-2">
-                                        <Label>Select Date</Label>
-                                        <Popover>
-                                            <PopoverTrigger asChild>
-                                                <Button
-                                                    variant="outline"
-                                                    className="w-[240px] justify-start text-left font-normal"
-                                                >
-                                                    <CalendarIcon className="mr-2 h-4 w-4" />
-                                                    {datePickerDate ? datePickerDate.toLocaleDateString() : "Pick a date"}
-                                                </Button>
-                                            </PopoverTrigger>
-                                            <PopoverContent className="w-auto p-0" align="start">
-                                                <Calendar
-                                                    mode="single"
-                                                    selected={datePickerDate}
-                                                    onSelect={setDatePickerDate}
-                                                    initialFocus
-                                                />
-                                            </PopoverContent>
-                                        </Popover>
-                                    </div>
+                                <CardContent>
+                                    <DatePickerWithinInput />
                                 </CardContent>
                             </Card>
+
 
                             {/* Date Range Picker */}
                             <Card>

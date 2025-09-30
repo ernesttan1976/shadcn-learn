@@ -1,5 +1,3 @@
-"use client"
-
 import * as React from "react"
 import {
   ChevronDownIcon,
@@ -15,11 +13,10 @@ function Calendar({
   className,
   classNames,
   showOutsideDays = true,
-  captionLayout = "dropdown-buttons",
+  captionLayout = "label",
   buttonVariant = "ghost",
   formatters,
   components,
-  mode = "range",
   ...props
 }: React.ComponentProps<typeof DayPicker> & {
   buttonVariant?: React.ComponentProps<typeof Button>["variant"]
@@ -29,7 +26,6 @@ function Calendar({
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
-      mode={mode}
       className={cn(
         "bg-background group/calendar p-3 [--cell-size:--spacing(8)] [[data-slot=card-content]_&]:bg-transparent [[data-slot=popover-content]_&]:bg-transparent",
         String.raw`rtl:**:[.rdp-button\_next>svg]:rotate-180`,
@@ -37,8 +33,6 @@ function Calendar({
         className
       )}
       captionLayout={captionLayout}
-      startMonth={new Date(2020, 0)}
-      endMonth={new Date(2030, 11)}
       formatters={{
         formatMonthDropdown: (date) =>
           date.toLocaleString("default", { month: "short" }),
