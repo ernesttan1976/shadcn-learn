@@ -1908,11 +1908,17 @@ iiiiiiiiii  |  10 characters
                                 </CardHeader>
                                 <CardContent>
                                     <Calendar
-                                        mode="single"
+                                        mode='single'
+                                        defaultMonth={selectedDate}
                                         selected={selectedDate}
                                         onSelect={setSelectedDate}
-                                        className="rounded-md border"
-                                    />
+                                        disabled={{
+                                            before: new Date(),
+                                        }}
+                                        className='rounded-lg border [--cell-size:--spacing(14)] xl:[--cell-size:--spacing(18)]'/>
+                                    <p className='text-muted-foreground mt-3 text-center text-xs' role='region'>
+                                        Disabled day calendar
+                                    </p>
                                 </CardContent>
                             </Card>
 
