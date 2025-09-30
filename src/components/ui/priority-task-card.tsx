@@ -15,22 +15,22 @@ export interface PriorityTaskCardProps {
 
 const variantStyles = {
   urgent: {
-    cardClass: 'border-l-4 border-l-[var(--color-merlin-red-500)] bg-[var(--color-merlin-red-50)]',
+    cardClass: 'border-l-6 border-l-[var(--color-merlin-red-500)] bg-[var(--color-merlin-white)] hover:bg-[var(--color-merlin-grey-50)]',
     iconClass: 'text-[var(--color-merlin-red-500)]',
     icon: AlertCircle,
-    badgeClass: 'bg-[var(--color-merlin-red-500)] text-white hover:bg-[var(--color-merlin-red-600)]'
+    badgeClass: 'bg-[var(--color-merlin-white)] text-black hover:bg-[var(--color-merlin-grey-100)]'
   },
   info: {
-    cardClass: 'border-l-4 border-l-[var(--color-merlin-blue-500)] bg-[var(--color-merlin-white)]',
+    cardClass: 'border-l-6 border-l-[var(--color-merlin-blue-500)] bg-[var(--color-merlin-white)] hover:bg-[var(--color-merlin-grey-50)]',
     iconClass: 'text-[var(--color-merlin-blue-500)]',
     icon: Info,
-    badgeClass: 'bg-[var(--color-merlin-blue-500)] text-white hover:bg-[var(--color-merlin-blue-600)]'
+    badgeClass: 'bg-[var(--color-merlin-white)] text-black hover:bg-[var(--color-merlin-grey-100)]'
   },
   action: {
-    cardClass: 'border-l-4 border-l-[var(--color-merlin-green-500)] bg-[var(--color-merlin-green-50)]',
+    cardClass: 'border-l-6 border-l-[var(--color-merlin-green-500)] bg-[var(--color-merlin-white)] hover:bg-[var(--color-merlin-grey-50)]',
     iconClass: 'text-[var(--color-merlin-green-500)]',
     icon: RefreshCw,
-    badgeClass: 'bg-[var(--color-merlin-green-500)] text-white hover:bg-[var(--color-merlin-green-600)]'
+    badgeClass: 'bg-[var(--color-merlin-white)] text-black hover:bg-[var(--color-merlin-grey-100)]'
   }
 }
 
@@ -71,7 +71,7 @@ export function PriorityTaskCard({
         <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3">
           {description}
         </p>
-        <Badge variant="outline" className="text-xs font-medium">
+        <Badge variant="outline" className={cn("text-xs font-medium", variantConfig.badgeClass)}>
           {timeInfo}
         </Badge>
       </CardContent>
