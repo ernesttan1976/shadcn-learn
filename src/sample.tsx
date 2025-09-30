@@ -184,6 +184,7 @@ import {
     Filter,
     SortAsc,
 } from 'lucide-react'
+import { PriorityTaskCard } from './components/ui/priority-task-card'
 
 export default function SamplePage() {
     const [isDark, setIsDark] = useState(false)
@@ -502,6 +503,31 @@ export default function SamplePage() {
 
                 {/* Main Content */}
                 <main className="container mx-auto px-4 py-6 space-y-8">
+
+                    {/* Priority Task Card Section */}
+                    <section className="space-y-8">
+                        <PriorityTaskCard
+                            variant="urgent"
+                            title="Qualification Expiring"
+                            description="Plus PTG 5G GMT qualification is expiring on 31 Dec 2025."
+                            timeInfo="Recurrency due in 92 days"
+                        />
+                        
+                        <PriorityTaskCard
+                            variant="info"
+                            title="Task Endorsement"
+                            description="2 practical tasks from trainees awaiting your endorsement."
+                            timeInfo="1st task assigned 5 days ago"
+                        />
+                        
+                        <PriorityTaskCard
+                            variant="action"
+                            title="Duty Swap"
+                            description="Duty swap request awaiting your acceptance."
+                            timeInfo="Request sent 2 days ago"
+                        />
+                    </section>
+
 
                     {/* Typography Section */}
                     <section className="space-y-8">
