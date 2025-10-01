@@ -16,7 +16,7 @@ function formatDate(date: Date | undefined) {
     return ''
   }
 
-  return format(date, 'dd/MM/yyyy')
+  return format(date, 'yyyy-MM-dd')
 }
 
 function isValidDate(date: Date | undefined) {
@@ -41,14 +41,15 @@ const DatePickerWithinInput = () => {
       <div className='relative flex gap-2'>
         <Input
           id='date'
+          type='date'
           value={value}
-          placeholder='01/01/2025'
-          className='bg-background pr-10'
+          placeholder='2025-01-01'
+          className='bg-background pr-10 [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-inner-spin-button]:hidden [&::-webkit-outer-spin-button]:hidden'
           onChange={e => {
             setValue(e.target.value)
 
-            // Try to parse the date in DD/MM/YYYY format
-            const parsedDate = parse(e.target.value, 'dd/MM/yyyy', new Date())
+            // Try to parse the date in YYYY-MM-DD format (HTML date input format)
+            const parsedDate = parse(e.target.value, 'yyyy-MM-dd', new Date())
 
             if (isValidDate(parsedDate)) {
               setDate(parsedDate)

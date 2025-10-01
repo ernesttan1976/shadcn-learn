@@ -478,27 +478,6 @@ code, kbd, samp, pre {
 
 /* shadcn/ui CSS Variables */
 @layer base {
-  /* Override calendar transparency in popovers */
-  [data-slot="popover-content"] .group\/calendar {
-    background-color: hsl(var(--popover)) !important;
-  }
-
-  /* Fix all content transparency issues with wildcard */
-  [data-slot*="-content"] {
-    background-color: hsl(var(--popover)) !important;
-  }
-
-  /* Override for dialog-type components that should use --background */
-  [data-slot="dialog-content"],
-  [data-slot="alert-dialog-content"],
-  [data-slot="sheet-content"] {
-    background-color: hsl(var(--background)) !important;
-  }
-
-  /* Override card-content background for priority task cards */
-  [data-slot="card-content"] {
-    background-color: transparent !important;
-  }
 
   :root {
     --background: 0 0% 100%;

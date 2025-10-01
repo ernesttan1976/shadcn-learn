@@ -67,7 +67,7 @@ export function PriorityTaskCard({
         </Button>
       </CardHeader>
       
-      <CardContent className="pt-0 px-4 pb-4 pl-13">
+      <CardContent className="pt-0 px-4 pb-4 pl-13 bg-transparent">
         <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3">
           {description}
         </p>
